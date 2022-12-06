@@ -1,0 +1,40 @@
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 30%;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    background-color: red;
+    z-index: 1;
+    .pokemon_image {
+        position: absolute;
+        transform: translate(0, -40%)
+    }
+    .pokemon_data {
+        position: absolute;
+        bottom: 15%;
+        font-weight: 600;
+        font-size: clamp(8px, 5vw, 25px);
+        color: #3a444d;
+        width: 200px;
+        .data_name {
+            text-transform: capitalize;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .pokedex {
+        top: 12%;
+    }
+}
+
+@media (max-width: $breakpoint-phone) {
+    .pokedex {
+        top: 22%;
+    }
+}

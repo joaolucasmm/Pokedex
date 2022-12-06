@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+@import './variables.scss';
+
+body {    
+    text-align: center;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(14,228,237,1) 100%);
+    min-height: 100vh;
+}
+
+.app_window {
+    display: flex;
+    font-family: 'Oxanium', cursive;
+    width: 425px;
+    max-height: 100vh;
+    margin: 0 auto;
+
+    .pokedex_image {
+        width: 100%;
+        max-width: 425px;
+        z-index: 1;
+    }
+    .pokedex_element {
+        z-index: 2;
+    }
+    .button_element {
+        z-index: 2;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    body {    
+        height: 100vh;
+    }
+}
